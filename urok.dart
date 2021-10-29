@@ -1,7 +1,5 @@
-import 'dart:io';
-
 void main() {
-  print(fib(77));
+  print(fib(9));
 }
 
 int fib(int a) {
@@ -19,18 +17,4 @@ int fib(int a) {
 
   int res = chislofib.last;
   return res;
-}
-
-fib2(int i) {
-// if (n == 0) {
-// return 0;
-// } else if (n == 1) {
-// return 1;
-// } else {
-// return fibonacci(n - 1) + fibonacci(n - 2);
-// }
-  if (i == 1 || i == 2) {
-    return 1;
-  }
-  return fib2(i - 1) + fib2(i - 2);
 }
