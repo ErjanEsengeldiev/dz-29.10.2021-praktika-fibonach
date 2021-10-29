@@ -1,7 +1,7 @@
 import 'dart:io';
 
 void main() {
-  print(fib(8));
+  print(fib(77));
 }
 
 int fib(int a) {
@@ -21,33 +21,7 @@ int fib(int a) {
   return res;
 }
 
-void igra() {
-  print('is it 50?');
-  dynamic a = stdin.readLineSync();
-  if (a == 'less') {
-    print('is it 25');
-    dynamic b = stdin.readLineSync();
-    if (b == 'less') {
-      print('is it 12');
-      dynamic c = stdin.readLineSync();
-      if (c == 'less') {
-        print('is it 6');
-      } else if (b == 'greater') {
-        print('is it 35');
-        dynamic c = stdin.readLineSync();
-        if (c == 'greter') {}
-      }
-    } else if (a == 'greater') {
-      print('is it 75?');
-      dynamic b = stdin.readLineSync();
-      if (b == 'less') {
-        print('is it 62');
-      }
-    }
-  }
-}
-
-fibonacci(int n) {
+fib2(int i) {
 // if (n == 0) {
 // return 0;
 // } else if (n == 1) {
@@ -55,8 +29,8 @@ fibonacci(int n) {
 // } else {
 // return fibonacci(n - 1) + fibonacci(n - 2);
 // }
-  if (n == 1 || n == 2) {
+  if (i == 1 || i == 2) {
     return 1;
   }
-  return fibonacci(n - 1) + fibonacci(n - 2);
+  return fib2(i - 1) + fib2(i - 2);
 }
